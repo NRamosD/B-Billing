@@ -21,7 +21,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/fallingskyextendedoblique"
+            android:fontFamily="@font/fsboldoblique"
             android:textSize="40dp"
             android:text="@string/app_name"
             android:textColor="@color/chocolate"

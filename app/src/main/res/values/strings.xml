@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">B-Billing</string>
+    <string name="TermsConditions">Esta es una versión de prueba. Todos los derechos reservados.
+       <strong><u>Contáctame</u></strong>.
+        <br/>
+        0993640706
+    </string>
 </resources>

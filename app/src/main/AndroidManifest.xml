@@ -8,14 +8,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BBilling">
-        <activity android:name=".MainActivity">
+        android:theme="@style/BBilling">
+        <activity android:name=".activities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar.">
+        </activity>
+        <activity android:name=".activities.MainActivity">
+        </activity>
+        <activity android:name=".activities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar."
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+
     </application>
 
 </manifest>

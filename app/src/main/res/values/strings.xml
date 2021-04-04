@@ -1,8 +1,19 @@
 <resources>
     <string name="app_name">B-Billing</string>
+    <!--Login-->
     <string name="TermsConditions">Esta es una versión de prueba. Todos los derechos reservados.
        <strong><u>Contáctame</u></strong>.
         <br/>
         0993640706
     </string>
+    <!--Registro-->
+    <string name="topMsg">Estas a punto de notar el cambio.💰</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="correo">Correo</string>
+    <string name="c1">Ingrese su contraseña</string>
+    <string name="c2">Repita su contraseña</string>
+    <string name="regis">Registrarse</string>
+    <string name="terms_reg">Al momento de registrarse, se asume que está de acuerdo <br/>con las políticas de privacidad. <u>Toca aquí para revisarlas.</u></string>
+    <string name="atras">Regresar</string>
 </resources>

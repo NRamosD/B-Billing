@@ -16,4 +16,11 @@
     <string name="regis">Registrarse</string>
     <string name="terms_reg">Al momento de registrarse, se asume que está de acuerdo <br/>con las políticas de privacidad. <u>Toca aquí para revisarlas.</u></string>
     <string name="atras">Regresar</string>
+
+    <!--Main Activity-->
+    <string name="search">Buscar</string>
+    <string name="more">Más</string>
+
+
+
 </resources>

@@ -19,7 +19,13 @@
 
     <!--Main Activity-->
     <string name="search">Buscar</string>
-    <string name="more">Más</string>
+    <string name="more">Acerca de</string>
+    <string name="sett">Configuraciones</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="product">Productos</string>
+    <string name="client">Clientes</string>
+    <string name="sell">Ventas</string>
+    <string name="lastSellText">Últimas ventas</string>
 
 
 

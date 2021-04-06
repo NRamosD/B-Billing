@@ -1,17 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvLastSells"
+    <fragment android:name="com.example.b_billing.fragments.LastSellsFragment"
+        android:id="@+id/fragmentLastSells"
         android:layout_width="match_parent"
         android:layout_height="660px"
-        android:padding="10px"/>
-    <TextView
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"/>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="aklsjdlkasj"
-        android:textSize="120pt"/>
+        android:orientation="horizontal"
+        android:id="@+id/linearButtonsPC"
+        android:layout_below="@+id/fragmentLastSells">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="8dp"
+            android:text="@string/product"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="8dp"
+            android:text="@string/client"
+            android:fontFamily="@font/fallingsky"
+            android:textSize="8pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearButtonsPC"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="8dp"
+            android:text="@string/sell"
+            android:fontFamily="@font/fallingsky"
+            android:textSize="8pt"/>
+    </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

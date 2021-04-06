@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="horizontal"
+        android:elevation="10px"
+        android:background="@drawable/back_item_lastsell"
+        android:layout_marginVertical="8px"
+        android:layout_marginHorizontal="5px">
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nombreCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consumidor Final"
+                android:textSize="12pt"
+                android:layout_marginHorizontal="20px"
+                android:layout_marginTop="20px"
+                android:fontFamily="@font/fallingsky"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/fechahora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha: 05/04/2021 19:23"
+                android:textSize="6pt"
+                android:layout_marginVertical="8px"
+                android:layout_marginHorizontal="20px"
+                android:fontFamily="@font/fallingskyextendedoblique"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="$26"
+            android:textSize="14pt"
+            android:fontFamily="@font/fsboldoblique"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+</RelativeLayout>

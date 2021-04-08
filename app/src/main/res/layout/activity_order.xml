@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+     <LinearLayout
+         android:id="@+id/firstblockorder"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="30dp">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/nuevaorden"
+              android:textSize="7pt"
+              android:gravity="left"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/fsboldoblique"
+              />
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/btnelegircliente"
+              android:layout_marginHorizontal="20dp"
+              android:layout_marginVertical="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              android:text="Consumidor final"
+              android:textSize="8pt"
+              android:fontFamily="@font/fallingsky"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/tocaparacambiarcliente"
+              android:textSize="7pt"
+              android:gravity="center"
+              />
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_below="@+id/firstblockorder"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/rvOrderProdcuts"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+     </LinearLayout>
+
+
+
+</RelativeLayout>

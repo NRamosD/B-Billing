@@ -11,7 +11,11 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- <item name="android:windowBackground"></item> Customize your theme here. -->
+        <!-- <item name="android:windowBackground"></item> Customize your theme here.
+        <item name="android:windowAnimationStyle">@style/animation</item>
+        -->
+
+
     </style>
     <style name="AppTheme.NoActionBar." parent="BBilling">
         <item name="windowActionBar">false</item>
@@ -19,4 +23,11 @@
         <item name="android:statusBarColor">@color/transparent</item>
         <item name="android:windowTranslucentStatus">true</item>
     </style>
+    <!--
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    -->
+
 </resources>

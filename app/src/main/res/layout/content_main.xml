@@ -16,6 +16,7 @@
         android:id="@+id/linearButtonsPC"
         android:layout_below="@+id/fragmentLastSells">
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProductosMain"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:layout_weight="1"
@@ -23,6 +24,7 @@
             android:layout_marginVertical="8dp"
             android:text="@string/product"/>
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClientesMain"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:layout_weight="1"
@@ -38,6 +40,7 @@
         android:layout_below="@+id/linearButtonsPC"
         >
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVentasMain"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:layout_weight="1"

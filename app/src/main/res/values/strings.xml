@@ -28,5 +28,11 @@
     <string name="lastSellText">Últimas ventas</string>
 
 
+    <!--Show Sell-->
+    <string name="totalcompra">Total de la compra</string>
+
+    <!--New order-->
+    <string name="tocaparacambiarcliente">Toca para cambiar el cliente</string>
+    <string name="nuevaorden">Nueva Orden</string>
 
 </resources>

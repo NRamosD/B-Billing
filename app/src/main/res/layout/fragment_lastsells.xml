@@ -9,19 +9,21 @@
         android:text="@string/lastSellText"
         android:fontFamily="@font/fsboldoblique"
         android:textSize="11pt"/>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvItemLastSell"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-    </ScrollView>
+
+         <androidx.core.widget.NestedScrollView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fillViewport="true">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 >
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/rvItemLastSell"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"/>
+             </LinearLayout>
+         </androidx.core.widget.NestedScrollView>
 
 
 </LinearLayout>

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.b_billing.R;
 import com.example.b_billing.activities.MainActivity;
+import com.example.b_billing.activities.ShowSellActivity;
 import com.example.b_billing.models.ultimasVentas;
 
 import java.text.SimpleDateFormat;
@@ -46,7 +47,7 @@ public class lastSellAdapter extends RecyclerView.Adapter<lastSellAdapter.ViewHo
         //holder.itemTotal.setText("$" + position);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(ctx, MainActivity.class);
+                Intent i = new Intent(ctx, ShowSellActivity.class);
                 ctx.startActivity(i);
             }
         });

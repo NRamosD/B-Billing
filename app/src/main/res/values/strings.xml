@@ -34,5 +34,6 @@
     <!--New order-->
     <string name="tocaparacambiarcliente">Toca para cambiar el cliente</string>
     <string name="nuevaorden">Nueva Orden</string>
-
+    <!--End Order-->
+    <string name="terminar">Finalizar</string>
 </resources>

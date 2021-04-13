@@ -48,7 +48,27 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"/>
      </LinearLayout>
-
-
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:orientation="vertical"
+         android:gravity="right">
+          <com.google.android.material.floatingactionbutton.FloatingActionButton
+              android:id="@+id/fabVistaPrevia"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:src="@drawable/ic_baseline_event_note"
+              android:backgroundTint="@color/white"/>
+          <com.google.android.material.floatingactionbutton.FloatingActionButton
+              android:id="@+id/fabContinuar"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:src="@drawable/ic_baseline_done"
+              android:backgroundTint="@color/white"
+              />
+     </LinearLayout>
 
 </RelativeLayout>

@@ -36,4 +36,5 @@
     <string name="nuevaorden">Nueva Orden</string>
     <!--End Order-->
     <string name="terminar">Finalizar</string>
+    <string name="datosfinales">Datos Finales de la Compra</string>
 </resources>

@@ -37,4 +37,7 @@
     <!--End Order-->
     <string name="terminar">Finalizar</string>
     <string name="datosfinales">Datos Finales de la Compra</string>
+    <!--Products-->
+    <string name="add">Nuevo</string>
+    <string name="show">Todos</string>
 </resources>

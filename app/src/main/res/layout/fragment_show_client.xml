@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
     <TextView
+        android:layout_margin="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="mostrar"
-        android:textSize="15pt"/>
+        android:text="@string/client"
+        android:fontFamily="@font/fallingskyextendedoblique"
+        android:textSize="12pt"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search"
+        app:startIconDrawable="@drawable/ic_baseline_search_24">
 
-</RelativeLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchClients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/back_edit_text"
+            android:fontFamily="@font/fallingsky"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvShowClients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+</LinearLayout>

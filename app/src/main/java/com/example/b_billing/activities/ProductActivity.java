@@ -54,7 +54,7 @@ public class ProductActivity extends AppCompatActivity {
                     currentF = new NewProductFragment();
                     break;
                 case R.id.item_show_product:
-                    currentF = new ShowProductFragment();
+                    currentF = new ShowProductFragment(getSupportFragmentManager());
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.container_products,currentF).commit();

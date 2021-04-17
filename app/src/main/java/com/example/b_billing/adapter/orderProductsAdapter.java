@@ -140,7 +140,7 @@ public class orderProductsAdapter extends RecyclerView.Adapter<orderProductsAdap
 
 
 
-    public void alertMessage(View v) {
+    /*public void alertMessage(View v) {
         DialogInterface.OnClickListener dialogClickListener = new  DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
@@ -178,7 +178,7 @@ public class orderProductsAdapter extends RecyclerView.Adapter<orderProductsAdap
         builder.setMessage("Are you sure?")
                 .setPositiveButton("Yes", dialogClickListener)
                 .setNegativeButton("No", dialogClickListener).show();
-    }
+    }*/
 
     /*public void selectQuantity() {
 

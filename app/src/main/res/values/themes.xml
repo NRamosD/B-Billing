@@ -34,6 +34,10 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_minor</item>
     </style>
+    <style name="FragmentDialog" parent="@android:style/Theme.Material.Dialog.NoActionBar">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
     <!--
     <style name="animation">
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>

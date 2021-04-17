@@ -21,6 +21,9 @@
             android:text="Nombre"
             android:layout_marginLeft="5dp"
             android:textSize="8pt"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
             />
         <TextView
             android:id="@+id/itemPrecioOrder"

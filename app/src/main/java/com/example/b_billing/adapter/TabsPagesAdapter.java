@@ -23,7 +23,7 @@ public class TabsPagesAdapter extends FragmentPagerAdapter {
             case 0:
                 return NewProductFragment.newInstance();
             case 1:
-                return ShowProductFragment.newInstance();
+                //return ShowProductFragment.newInstance();
             default:
                 return null;
         }

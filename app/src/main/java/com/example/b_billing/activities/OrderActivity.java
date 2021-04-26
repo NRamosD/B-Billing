@@ -2,6 +2,8 @@ package com.example.b_billing.activities;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
@@ -9,12 +11,14 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.NumberPicker;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,6 +26,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.b_billing.R;
 import com.example.b_billing.adapter.orderProductsAdapter;
 import com.example.b_billing.fragments.QuantityFragment;
+import com.example.b_billing.fragments.ShowClientFragment;
 import com.example.b_billing.models.productos;
 import com.example.b_billing.models.ultimasVentas;
 import com.google.android.material.button.MaterialButton;
@@ -32,11 +37,14 @@ import java.util.ArrayList;
 public class OrderActivity extends AppCompatActivity{
     private RecyclerView rv;
     private ArrayList<productos> listProducts;
-
     RecyclerView.LayoutManager rvLayoutManager;
     orderProductsAdapter orderProductsAdapter;
     FragmentManager fragmentManager;
     FloatingActionButton listo, vistaPrevia;
+    MaterialButton elegirCliente;
+    TextView numProductos;
+
+
 
 
     @Override
@@ -46,6 +54,8 @@ public class OrderActivity extends AppCompatActivity{
         rv = findViewById(R.id.rvOrderProdcuts);
         listo = findViewById(R.id.fabContinuar);
         vistaPrevia = findViewById(R.id.fabVistaPrevia);
+        numProductos = findViewById(R.id.productosEnLista);
+        elegirCliente = findViewById(R.id.btnelegircliente);
 
 
         //Eventos fabs
@@ -54,6 +64,22 @@ public class OrderActivity extends AppCompatActivity{
             public void onClick(View v) {
                 Intent i = new Intent(OrderActivity.this, EndOrderActivity.class);
                 startActivity(i);
+            }
+        });
+
+        vistaPrevia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(OrderActivity.this, PreviewActivity.class);
+                startActivity(i);
+            }
+        });
+        elegirCliente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), SelectClientActivity.class);
+                startActivity(i);
+
             }
         });
 
@@ -69,6 +95,11 @@ public class OrderActivity extends AppCompatActivity{
         rv.setHasFixedSize(true);
 
 
+    }
+
+    public void changeStatus(int s){
+        String q = String.valueOf(s);
+        numProductos.setText(q);
     }
 
 

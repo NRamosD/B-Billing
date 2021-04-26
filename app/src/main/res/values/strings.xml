@@ -40,4 +40,7 @@
     <!--Products-->
     <string name="add">Nuevo</string>
     <string name="show">Todos</string>
+    <!--Ventas-->
+    <string name="ventasFechaEspecifica">UN DÍA</string>
+    <string name="ventasRangoFecha">VARIOS DÍAS</string>
 </resources>

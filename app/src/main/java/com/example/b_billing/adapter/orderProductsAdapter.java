@@ -109,27 +109,6 @@ public class orderProductsAdapter extends RecyclerView.Adapter<orderProductsAdap
                 //dialogFragment.setValueChangeListener(valueChangeListener);
                 dialogFragment.show(frM,"esa es");
 
-                //alertMessage(v);
-
-                /*    holder.dialog.setContentView(R.layout.custom_alert_numberpicker);
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-                holder.dialog.getWindow().setBackgroundDrawable(ctx.getDrawable(R.drawable.back_edit_text));
-            }
-            holder.dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            holder.dialog.setCancelable(true);
-
-
-            ok = v.findViewById(R.id.dialogContinuar);
-            cancel = v.findViewById(R.id.dialogCancelar);
-
-            ok.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(ctx,"a ver",Toast.LENGTH_SHORT).show();
-                }
-            });
-
-                holder.dialog.show();*/
             }
         });
 
@@ -210,7 +189,7 @@ public class orderProductsAdapter extends RecyclerView.Adapter<orderProductsAdap
             nombre = v.findViewById(R.id.itemNombreOrder);
             precio = v.findViewById(R.id.itemPrecioOrder);
             img = v.findViewById(R.id.itemImgOrder);
-            dialog = new Dialog(ctx);
+
             //numberPicker = v.findViewById(R.id.alertNumberP);
         }
 

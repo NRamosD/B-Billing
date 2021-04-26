@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.Toast;
@@ -13,13 +14,27 @@ import android.widget.Toast;
 import androidx.fragment.app.DialogFragment;
 
 import com.example.b_billing.R;
+import com.example.b_billing.activities.OrderActivity;
 import com.google.android.material.button.MaterialButton;
 
 
 public class dialogFragment extends DialogFragment {
 
     private NumberPicker.OnValueChangeListener valueChangeListener;
+
+
+
+    int cantidadProductos=0;
     int cantidad=1;
+
+    public int getCantidadProductos() {
+        return cantidadProductos;
+    }
+
+    public void setCantidadProductos(int cantidadProductos) {
+        this.cantidadProductos = cantidadProductos;
+    }
+
 
     public int getCantidad() {
         return cantidad;
@@ -51,8 +66,11 @@ public class dialogFragment extends DialogFragment {
             public void onClick(DialogInterface dialog, int which) {
                 /*valueChangeListener.onValueChange(numberPicker,
                         numberPicker.getValue(), numberPicker.getValue());*/
+                //setCantidadProductos(cantidadProductos++);
+                ((OrderActivity)getActivity()).changeStatus(getCantidadProductos());
+                //setCantidadProductos(cantidadProductos);
                 setCantidad(cantidad);
-                Toast.makeText(getContext(), "Seleccionó "+getCantidad(),
+                Toast.makeText(getContext(), "Seleccionó "+getCantidad()+" prod "+getCantidadProductos(),
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -70,6 +88,8 @@ public class dialogFragment extends DialogFragment {
 
 
         builder.setView(numberPicker);
+        cantidadProductos++;
+        setCantidadProductos(cantidadProductos);
         return builder.create();
     }
 

@@ -54,13 +54,27 @@
          android:layout_alignParentBottom="true"
          android:orientation="vertical"
          android:gravity="right">
-          <com.google.android.material.floatingactionbutton.FloatingActionButton
-              android:id="@+id/fabVistaPrevia"
+          <RelativeLayout
               android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_margin="10dp"
-              android:src="@drawable/ic_baseline_event_note"
-              android:backgroundTint="@color/white"/>
+              android:layout_height="wrap_content">
+
+               <com.google.android.material.floatingactionbutton.FloatingActionButton
+                   android:id="@+id/fabVistaPrevia"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:src="@drawable/ic_baseline_event_note"
+                   android:backgroundTint="@color/white"/>
+               <TextView
+                   android:id="@+id/productosEnLista"
+                   android:layout_width="50px"
+                   android:layout_height="50px"
+                   android:text="0"
+                   android:fontFamily="@font/fsboldoblique"
+                   android:textAlignment="center"
+                   />
+          </RelativeLayout>
+
           <com.google.android.material.floatingactionbutton.FloatingActionButton
               android:id="@+id/fabContinuar"
               android:layout_width="wrap_content"

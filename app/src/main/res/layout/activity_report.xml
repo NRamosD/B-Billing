@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pickDate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ventasFechaEspecifica"
+                android:layout_margin="5px"
+                android:layout_marginHorizontal="5dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pickDateRange"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ventasRangoFecha"
+                android:layout_margin="5px"
+                android:layout_marginHorizontal="5dp"/>
+        </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px">
+            <TextView
+                android:id="@+id/etiquetaVentas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todo"
+                android:fontFamily="@font/fsboldoblique"
+                android:textSize="12pt"
+                android:layout_margin="10px"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVentas"
+        android:layout_margin="15px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
